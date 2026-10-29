@@ -1,0 +1,37 @@
+[
+  {
+    "id": "polite",
+    "label": "Formal / cortès",
+    "group": "registre"
+  },
+  {
+    "id": "casual",
+    "label": "Informal",
+    "group": "registre"
+  },
+  {
+    "id": "honorific",
+    "label": "Honorífic",
+    "group": "registre"
+  },
+  {
+    "id": "slang",
+    "label": "Argot",
+    "group": "us"
+  },
+  {
+    "id": "transitive",
+    "label": "Verb transitiu",
+    "group": "gramatica"
+  },
+  {
+    "id": "intransitive",
+    "label": "Verb intransitiu",
+    "group": "gramatica"
+  },
+  {
+    "id": "irregular",
+    "label": "Irregular",
+    "group": "gramatica"
+  }
+]

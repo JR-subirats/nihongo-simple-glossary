@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f9">
+  <title>Kotoba — Editor del glossari japonès</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Kotoba, inici"><span class="brand-mark" lang="ja">言</span><span>kotoba<span class="brand-dot">.</span><small>EL TEU JAPONÈS, PARAULA A PARAULA</small></span></a>
+    <div class="workspace-label">ESPAI PERSONAL</div>
+    <nav aria-label="Navegació principal">
+      <button class="nav-item active" data-view="glossary"><span class="nav-icon">▤</span> El meu glossari <span id="nav-count" class="count">0</span></button>
+    </nav>
+    <div class="sidebar-heading">COL·LECCIONS <span>＋</span></div>
+    <div id="collections"></div>
+    <div class="sidebar-bottom">
+      <div class="daily-note"><span lang="ja">言葉</span><strong>Editor del glossari.</strong><p>Edita les dades locals. L’aplicació d’estudi es publica per separat.</p></div>
+      <div class="local-status"><span class="status-dot"></span> Glossari local <span>JSON</span></div>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><span><span class="breadcrumb">Espai personal</span><span class="slash">/</span><span id="breadcrumb-current">El meu glossari</span></span><span class="topbar-note"><span class="status-dot"></span> Connectat als teus fitxers</span></header>
+    <main>
+      <div id="error" class="error-banner" role="alert" hidden></div>
+      <section id="glossary-view">
+        <div class="page-heading"><div><div class="eyebrow">LA TEVA COL·LECCIÓ DE PARAULES</div><h1>El meu glossari<span>.</span></h1><p>Un lloc per descobrir, organitzar i fer teu el japonès.</p></div><button id="new-entry" class="button primary"><span>＋</span> Nova entrada</button></div>
+        <div class="stats-grid">
+          <div class="stat"><span class="stat-icon mint">文</span><div><span class="stat-label">Paraules al glossari</span><strong id="total-count">—</strong></div><span class="stat-caption">Cada paraula compta</span></div>
+          <div class="stat"><span class="stat-icon lavender">▦</span><div><span class="stat-label">Categories</span><strong id="category-count">—</strong></div><span class="stat-caption">Tot al seu lloc</span></div>
+          <div class="stat"><span class="stat-icon peach">✓</span><div><span class="stat-label">Desament</span><strong>JSON</strong></div><span class="stat-caption">Als teus fitxers locals</span></div>
+        </div>
+        <div class="list-heading"><h2>Les teves paraules <span id="result-count" class="count">0</span></h2><div class="view-caption">Japonès <span>→</span> Català</div></div>
+        <div class="toolbar">
+          <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Cerca en japonès, romaji o català..." aria-label="Cerca al glossari"><kbd>/</kbd></label>
+          <label class="sr-only" for="category-filter">Categoria</label><select id="category-filter"><option value="">Totes les categories</option></select>
+          <label class="sr-only" for="pos-filter">Tipus de paraula</label><select id="pos-filter"><option value="">Tots els tipus</option></select>
+          <button id="more-filters" class="button secondary" aria-expanded="false" aria-controls="extra-filters"><span>☷</span> Filtres <span id="filter-dot" hidden>●</span></button>
+        </div>
+        <div id="extra-filters" class="extra-filters" hidden><label>Etiqueta<select id="tag-filter"><option value="">Totes les etiquetes</option></select></label><label>Ordena per<select id="sort"><option value="romaji">Romaji (A–Z)</option><option value="meaning">Significat (A–Z)</option></select></label><button id="reset-filters" class="text-button">Neteja els filtres</button></div>
+        <div class="table-wrap"><table><thead><tr><th>PARAULA <span>↕</span></th><th>SIGNIFICAT</th><th>CATEGORIA</th><th>TIPUS</th><th><span class="sr-only">Accions</span></th></tr></thead><tbody id="entries"><tr><td colspan="5" class="empty-state">Carregant el teu glossari…</td></tr></tbody></table><div class="table-footer"><span id="table-summary">Llegint els fitxers locals…</span><span class="subtle">Fet per aprendre, al teu ritme.</span></div></div>
+      </section>
+      <footer class="page-footer"><span>kotoba. <span class="subtle">Un espai per al teu japonès.</span></span><span lang="ja">継続は力なり <span class="subtle">· La constància és força.</span></span></footer>
+    </main>
+  </div>
+  <dialog id="entry-dialog" aria-labelledby="dialog-title">
+    <form id="entry-form">
+      <div class="dialog-heading"><div><div class="eyebrow">EL TEU GLOSSARI</div><h2 id="dialog-title">Nova entrada</h2></div><button type="button" class="icon-button close-dialog" aria-label="Tanca">×</button></div>
+      <div class="form-body">
+        <p class="form-hint">Els camps amb * són obligatoris. Les modificacions es desen als fitxers JSON.</p>
+        <div class="form-grid"><label>Romaji *<input name="romaji" required maxlength="20000" placeholder="neko"></label><label>Kanji (separats per comes)<input name="kanji" lang="ja" placeholder="猫"></label><label>Hiragana<input name="hiragana" lang="ja" placeholder="ねこ"></label><label>Katakana<input name="katakana" lang="ja" placeholder="ネコ"></label></div>
+        <fieldset><legend>Significats *</legend><div id="meaning-fields"></div><button type="button" id="add-meaning" class="text-button">＋ Afegeix un significat</button></fieldset>
+        <fieldset><legend>Categories * <span class="subtle">· almenys una</span></legend><div id="category-fields" class="checkbox-grid"></div></fieldset>
+        <fieldset><legend>Tipus de paraula *</legend><div id="pos-fields" class="checkbox-grid"></div></fieldset>
+        <fieldset><legend>Etiquetes</legend><div id="tag-fields" class="checkbox-grid"></div></fieldset>
+        <fieldset><legend>Exemples</legend><div id="example-fields"></div><button type="button" id="add-example" class="text-button">＋ Afegeix un exemple</button></fieldset>
+        <label>Notes<textarea name="notes" rows="3" placeholder="Matisos, usos o pistes per recordar la paraula…"></textarea></label>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+      </div>
+      <div class="dialog-footer"><button id="delete-entry" type="button" class="button danger" hidden>Elimina</button><span class="spacer"></span><button type="button" class="button secondary close-dialog">Cancel·la</button><button type="submit" class="button primary" id="save-entry">Desa l’entrada</button></div>
+    </form>
+  </dialog>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><div class="confirm-body"><h2 id="confirm-title">Elimina aquesta entrada?</h2><p>Aquesta acció modificarà el fitxer JSON i no es pot desfer.</p><div class="confirm-actions"><button id="cancel-delete" class="button secondary">Cancel·la</button><button id="confirm-delete" class="button danger">Sí, elimina-la</button></div></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

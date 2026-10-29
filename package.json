@@ -1,0 +1,29 @@
+{
+  "name": "nihongo-simple-glossary",
+  "version": "1.0.0",
+  "description": "Editor local i targetes d'estudi per a un glossari japonès.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev:editor": "node --watch src/server.js",
+    "dev:study": "vite --config vite.study.config.mjs",
+    "build": "npm run build:study",
+    "build:study": "vite build --config vite.study.config.mjs",
+    "preview:study": "vite preview --config vite.study.config.mjs",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.12"
+  }
+}

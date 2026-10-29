@@ -1,0 +1,25 @@
+{
+  "id": "jp_animal_001",
+  "romaji": "neko",
+  "hiragana": "ねこ",
+  "katakana": "ネコ",
+  "kanji": ["猫"],
+  "meanings": [
+    {
+      "text": "gat",
+      "description": "Animal domèstic de la família dels fèlids."
+    }
+  ],
+  "partOfSpeech": ["noun"],
+  "categories": ["animals", "pets"],
+  "tags": [],
+  "examples": [
+    {
+      "japanese": "猫がいます。",
+      "hiragana": "ねこがいます。",
+      "romaji": "Neko ga imasu.",
+      "translation": "Hi ha un gat."
+    }
+  ],
+  "notes": ""
+}

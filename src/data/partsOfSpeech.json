@@ -1,0 +1,30 @@
+[
+  {
+    "id": "noun",
+    "label": "Substantiu"
+  },
+  {
+    "id": "verb",
+    "label": "Verb"
+  },
+  {
+    "id": "i-adjective",
+    "label": "Adjectiu en い"
+  },
+  {
+    "id": "na-adjective",
+    "label": "Adjectiu en な"
+  },
+  {
+    "id": "adverb",
+    "label": "Adverbi"
+  },
+  {
+    "id": "particle",
+    "label": "Partícula"
+  },
+  {
+    "id": "expression",
+    "label": "Expressió"
+  }
+]

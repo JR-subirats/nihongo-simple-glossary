@@ -1,0 +1,30 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+.vite/
+
+# Logs and test output
+*.log
+coverage/
+.nyc_output/
+
+# Local environment settings (keep example files versioned)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+
+# Temporary files from atomic glossary writes
+/src/data/glossary/*.json.*.tmp
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini

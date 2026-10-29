@@ -1,0 +1,47 @@
+[
+  {
+    "id": "family",
+    "label": "Familia",
+    "parentId": null
+  },
+  {
+    "id": "animals",
+    "label": "Animals",
+    "parentId": null
+  },
+  {
+    "id": "pets",
+    "label": "Animals domèstics",
+    "parentId": "animals"
+  },
+  {
+    "id": "food",
+    "label": "Menjar",
+    "parentId": null
+  },
+  {
+    "id": "fruit",
+    "label": "Fruita",
+    "parentId": "food"
+  },
+  {
+    "id": "vegetables",
+    "label": "Verdures",
+    "parentId": "food"
+  },
+  {
+    "id": "meat",
+    "label": "Carn",
+    "parentId": "food"
+  },
+  {
+    "id": "other-foods",
+    "label": "Altres aliments",
+    "parentId": "food"
+  },
+  {
+    "id": "jobs",
+    "label": "Feines",
+    "parentId": null
+  }
+]

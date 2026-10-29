@@ -1,0 +1,283 @@
+[
+  {
+    "id": "jp_family_001",
+    "romaji": "kazoku",
+    "hiragana": "かぞく",
+    "katakana": "カゾク",
+    "kanji": [
+      "家族"
+    ],
+    "meanings": [
+      {
+        "text": "família",
+        "description": "Conjunt de persones que formen una família."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "家族は五人です。",
+        "hiragana": "かぞくはごにんです。",
+        "romaji": "Kazoku wa gonin desu.",
+        "translation": "Som cinc a la família."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jp_family_002",
+    "romaji": "chichi",
+    "hiragana": "ちち",
+    "katakana": "チチ",
+    "kanji": [
+      "父"
+    ],
+    "meanings": [
+      {
+        "text": "pare",
+        "description": "Terme habitual per referir-se al propi pare quan es parla amb altres persones."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "父は会社員です。",
+        "hiragana": "ちちはかいしゃいんです。",
+        "romaji": "Chichi wa kaishain desu.",
+        "translation": "El meu pare és empleat d'empresa."
+      }
+    ],
+    "notes": "Per adreçar-se directament al pare o parlar-ne amb respecte, sovint s'utilitza お父さん (otōsan)."
+  },
+  {
+    "id": "jp_family_003",
+    "romaji": "haha",
+    "hiragana": "はは",
+    "katakana": "ハハ",
+    "kanji": [
+      "母"
+    ],
+    "meanings": [
+      {
+        "text": "mare",
+        "description": "Terme habitual per referir-se a la pròpia mare quan es parla amb altres persones."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "母は料理が好きです。",
+        "hiragana": "はははりょうりがすきです。",
+        "romaji": "Haha wa ryōri ga suki desu.",
+        "translation": "A la meva mare li agrada cuinar."
+      }
+    ],
+    "notes": "Per adreçar-se directament a la mare o parlar-ne amb respecte, sovint s'utilitza お母さん (okāsan)."
+  },
+  {
+    "id": "jp_family_004",
+    "romaji": "ani",
+    "hiragana": "あに",
+    "katakana": "アニ",
+    "kanji": [
+      "兄"
+    ],
+    "meanings": [
+      {
+        "text": "germà gran",
+        "description": "Germà més gran que un mateix."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "兄は大学生です。",
+        "hiragana": "あにはだいがくせいです。",
+        "romaji": "Ani wa daigakusei desu.",
+        "translation": "El meu germà gran és universitari."
+      }
+    ],
+    "notes": "Per parlar del germà gran d'una altra persona amb respecte, s'utilitza sovint お兄さん (onīsan)."
+  },
+  {
+    "id": "jp_family_005",
+    "romaji": "ane",
+    "hiragana": "あね",
+    "katakana": "アネ",
+    "kanji": [
+      "姉"
+    ],
+    "meanings": [
+      {
+        "text": "germana gran",
+        "description": "Germana més gran que un mateix."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "姉は東京に住んでいます。",
+        "hiragana": "あねはとうきょうにすんでいます。",
+        "romaji": "Ane wa Tōkyō ni sunde imasu.",
+        "translation": "La meva germana gran viu a Tòquio."
+      }
+    ],
+    "notes": "Per parlar de la germana gran d'una altra persona amb respecte, s'utilitza sovint お姉さん (onēsan)."
+  },
+  {
+    "id": "jp_family_006",
+    "romaji": "otooto",
+    "hiragana": "おとうと",
+    "katakana": "オトウト",
+    "kanji": [
+      "弟"
+    ],
+    "meanings": [
+      {
+        "text": "germà petit",
+        "description": "Germà més jove que un mateix."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "弟は十歳です。",
+        "hiragana": "おとうとはじゅっさいです。",
+        "romaji": "Otōto wa jussai desu.",
+        "translation": "El meu germà petit té deu anys."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jp_family_007",
+    "romaji": "imooto",
+    "hiragana": "いもうと",
+    "katakana": "イモウト",
+    "kanji": [
+      "妹"
+    ],
+    "meanings": [
+      {
+        "text": "germana petita",
+        "description": "Germana més jove que un mateix."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "妹は猫が好きです。",
+        "hiragana": "いもうとはねこがすきです。",
+        "romaji": "Imōto wa neko ga suki desu.",
+        "translation": "A la meva germana petita li agraden els gats."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "jp_family_008",
+    "romaji": "ojiisan",
+    "hiragana": "おじいさん",
+    "katakana": "オジイサン",
+    "kanji": [
+      "お祖父さん",
+      "お爺さん"
+    ],
+    "meanings": [
+      {
+        "text": "avi",
+        "description": "Home gran; també s'utilitza per referir-se respectuosament a l'avi d'algú."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "おじいさんは元気です。",
+        "hiragana": "おじいさんはげんきです。",
+        "romaji": "Ojiisan wa genki desu.",
+        "translation": "L'avi està bé."
+      }
+    ],
+    "notes": "La forma en hiragana és molt habitual. El significat depèn del context."
+  },
+  {
+    "id": "jp_family_009",
+    "romaji": "obaasan",
+    "hiragana": "おばあさん",
+    "katakana": "オバアサン",
+    "kanji": [
+      "お祖母さん",
+      "お婆さん"
+    ],
+    "meanings": [
+      {
+        "text": "àvia",
+        "description": "Dona gran; també s'utilitza per referir-se respectuosament a l'àvia d'algú."
+      }
+    ],
+    "partOfSpeech": [
+      "noun"
+    ],
+    "categories": [
+      "family"
+    ],
+    "tags": [],
+    "examples": [
+      {
+        "japanese": "おばあさんは元気です。",
+        "hiragana": "おばあさんはげんきです。",
+        "romaji": "Obaasan wa genki desu.",
+        "translation": "L'àvia està bé."
+      }
+    ],
+    "notes": "La forma en hiragana és molt habitual. El significat depèn del context."
+  }
+]
